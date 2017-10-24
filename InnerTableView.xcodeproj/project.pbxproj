@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		82383AD91F9FEDD0005490D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82383AD81F9FEDD0005490D2 /* AppDelegate.swift */; };
-		82383ADB1F9FEDD0005490D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82383ADA1F9FEDD0005490D2 /* ViewController.swift */; };
 		82383ADE1F9FEDD0005490D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82383ADC1F9FEDD0005490D2 /* Main.storyboard */; };
 		82383AE01F9FEDD0005490D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82383ADF1F9FEDD0005490D2 /* Assets.xcassets */; };
 		82383AE31F9FEDD0005490D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82383AE11F9FEDD0005490D2 /* LaunchScreen.storyboard */; };
+		82383AEB1F9FF0CC005490D2 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82383AEA1F9FF0CC005490D2 /* MainTableViewController.swift */; };
+		82383AF11F9FFE46005490D2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82383AF01F9FFE46005490D2 /* MainTableViewCell.swift */; };
+		82383AF31F9FFE57005490D2 /* InnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82383AF21F9FFE57005490D2 /* InnerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82383AD51F9FEDD0005490D2 /* InnerTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnerTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82383AD81F9FEDD0005490D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82383ADA1F9FEDD0005490D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82383ADD1F9FEDD0005490D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82383ADF1F9FEDD0005490D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82383AE21F9FEDD0005490D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82383AE41F9FEDD0005490D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82383AEA1F9FF0CC005490D2 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		82383AF01F9FFE46005490D2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		82383AF21F9FFE57005490D2 /* InnerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		82383AD71F9FEDD0005490D2 /* InnerTableView */ = {
 			isa = PBXGroup;
 			children = (
-				82383AD81F9FEDD0005490D2 /* AppDelegate.swift */,
-				82383ADA1F9FEDD0005490D2 /* ViewController.swift */,
-				82383ADC1F9FEDD0005490D2 /* Main.storyboard */,
-				82383ADF1F9FEDD0005490D2 /* Assets.xcassets */,
-				82383AE11F9FEDD0005490D2 /* LaunchScreen.storyboard */,
 				82383AE41F9FEDD0005490D2 /* Info.plist */,
+				82383AF61F9FFF32005490D2 /* Root */,
+				82383AF51F9FFF11005490D2 /* User Interface */,
+				82383AF41F9FFEA6005490D2 /* Controllers */,
+				82383AEE1F9FFE11005490D2 /* Custom Cells */,
+				82383ADF1F9FEDD0005490D2 /* Assets.xcassets */,
 			);
 			path = InnerTableView;
+			sourceTree = "<group>";
+		};
+		82383AEE1F9FFE11005490D2 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				82383AF01F9FFE46005490D2 /* MainTableViewCell.swift */,
+				82383AF21F9FFE57005490D2 /* InnerTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		82383AF41F9FFEA6005490D2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82383AEA1F9FF0CC005490D2 /* MainTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		82383AF51F9FFF11005490D2 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				82383ADC1F9FEDD0005490D2 /* Main.storyboard */,
+				82383AE11F9FEDD0005490D2 /* LaunchScreen.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		82383AF61F9FFF32005490D2 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				82383AD81F9FEDD0005490D2 /* AppDelegate.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82383ADB1F9FEDD0005490D2 /* ViewController.swift in Sources */,
+				82383AEB1F9FF0CC005490D2 /* MainTableViewController.swift in Sources */,
+				82383AF11F9FFE46005490D2 /* MainTableViewCell.swift in Sources */,
+				82383AF31F9FFE57005490D2 /* InnerTableViewCell.swift in Sources */,
 				82383AD91F9FEDD0005490D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U294U2N56;
 				INFOPLIST_FILE = InnerTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.InnerTableView;
@@ -289,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U294U2N56;
 				INFOPLIST_FILE = InnerTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.InnerTableView;
