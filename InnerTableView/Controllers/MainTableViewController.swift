@@ -8,6 +8,8 @@
 
 import UIKit
 
+let ROW_HEIGHT = 50
+
 class MainTableViewController: UITableViewController {
     
     // Properties
@@ -16,6 +18,10 @@ class MainTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.estimatedRowHeight = CGFloat(ROW_HEIGHT)
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        
         
         loadSource()
     }
@@ -32,11 +38,11 @@ class MainTableViewController: UITableViewController {
         innerSource.append("Amaranto Junior - 2232-0909")
         innerSource.append("Beatriz Salgado - 2232-1988")
         innerSource.append("Ingrid Bergman - 2232-7152")
-        
+
         innerSource.append("Amaranto Junior - 2232-0909")
         innerSource.append("Beatriz Salgado - 2232-1988")
         innerSource.append("Ingrid Bergman - 2232-7152")
-        
+
         innerSource.append("Amaranto Junior - 2232-0909")
         innerSource.append("Beatriz Salgado - 2232-1988")
         innerSource.append("Ingrid Bergman - 2232-7152")
@@ -64,7 +70,7 @@ class MainTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 465
     }
 
 }
