@@ -12,6 +12,7 @@ class MainTableViewCell: UITableViewCell {
     
     // Outlets
     @IBOutlet weak var mainTitle: UILabel!
+    @IBOutlet weak var innerTableView: UITableView!
     
 
     override func awakeFromNib() {

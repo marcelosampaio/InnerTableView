@@ -9,9 +9,6 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-
-    // Outlets
-    
     
     // Properties
     var source = [String]()
