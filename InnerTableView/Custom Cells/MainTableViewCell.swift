@@ -10,6 +10,9 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataSource {
     
+    // Properties
+    var innerSource = [String]()
+    
     // Outlets
     @IBOutlet weak var mainTitle: UILabel!
     @IBOutlet weak var innerTableView: UITableView!
@@ -29,7 +32,7 @@ class MainTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataSo
     
     // MARK: - TableView Delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return innerSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
