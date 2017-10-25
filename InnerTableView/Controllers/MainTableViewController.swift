@@ -32,6 +32,14 @@ class MainTableViewController: UITableViewController {
         innerSource.append("Amaranto Junior - 2232-0909")
         innerSource.append("Beatriz Salgado - 2232-1988")
         innerSource.append("Ingrid Bergman - 2232-7152")
+        
+        innerSource.append("Amaranto Junior - 2232-0909")
+        innerSource.append("Beatriz Salgado - 2232-1988")
+        innerSource.append("Ingrid Bergman - 2232-7152")
+        
+        innerSource.append("Amaranto Junior - 2232-0909")
+        innerSource.append("Beatriz Salgado - 2232-1988")
+        innerSource.append("Ingrid Bergman - 2232-7152")
    
     }
     
@@ -51,6 +59,7 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! MainTableViewCell
         cell.mainTitle.text = source[indexPath.row]
+        cell.innerSource = innerSource
         return cell
     }
     

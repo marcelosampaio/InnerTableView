@@ -27,6 +27,15 @@ class MainTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataSo
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        innerTableView.dataSource = self
+        innerTableView.delegate = self
+        
+        
+        print("☎️ INNER SOURCE.count: \(innerSource.count)")
+        
+        innerTableView.reloadData()
+        
+        
     }
 
     
@@ -36,7 +45,10 @@ class MainTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cell = innerTableView.dequeueReusableCell(withIdentifier: "InnerCell")
+        cell?.textLabel?.text = "Hi !"
+        return cell!
     }
     
 }
